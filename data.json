@@ -1,0 +1,143 @@
+{
+  "categories": [
+    {
+      "_id": "671e26f953884bce720730f1",
+      "name": "Passenger Cars",
+      "description": "Vehicles designed for transporting passengers",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Category+Image"
+    },
+    {
+      "_id": "671e26f953884bce720730f3",
+      "name": "Commercial Vehicles",
+      "description": "Vehicles used for business purposes",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Category+Image"
+    },
+    {
+      "_id": "671e26f953884bce720730f4",
+      "name": "Sedans",
+      "description": "Comfortable cars for daily commutes",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Category+Image",
+      "parent": "671e26f953884bce720730f1"
+    },
+    {
+      "_id": "671e26f953884bce720730f5",
+      "name": "SUVs",
+      "description": "Vehicles with increased ground clearance",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Category+Image",
+      "parent": "671e26f953884bce720730f1"
+    },
+    {
+      "_id": "671e26f953884bce720730f6",
+      "name": "Sports Cars",
+      "description": "Fast and powerful vehicles",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Category+Image",
+      "parent": "671e26f953884bce720730f1"
+    },
+    {
+      "_id": "671e26f953884bce720730f7",
+      "name": "Vans",
+      "description": "Vehicles for transporting goods or people",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Category+Image",
+      "parent": "671e26f953884bce720730f3"
+    },
+    {
+      "_id": "671e26f953884bce720730f9",
+      "name": "Trucks",
+      "description": "Heavy-duty vehicles for transporting cargo",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Category+Image",
+      "parent": "671e26f953884bce720730f3"
+    }
+  ],
+  "cars": [
+    {
+      "_id": "671e26f953884bce720730fa",
+      "name": "Toyota Camry",
+      "price": 30000,
+      "description": "Reliable family sedan",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f4", "671e26f953884bce720730f1"]
+    },
+    {
+      "_id": "671e26f953884bce720730fb",
+      "name": "Honda Accord",
+      "price": 32000,
+      "description": "Elegant sedan with excellent handling",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f4", "671e26f953884bce720730f1"]
+    },
+    {
+      "_id": "671e26f953884bce720730fc",
+      "name": "Toyota RAV4",
+      "price": 35000,
+      "description": "Popular compact crossover",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f5", "671e26f953884bce720730f1"]
+    },
+    {
+      "_id": "671e26f953884bce720730fd",
+      "name": "Jeep Wrangler",
+      "price": 40000,
+      "description": "Legendary off-road vehicle",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f5", "671e26f953884bce720730f1"]
+    },
+    {
+      "_id": "671e26f953884bce720730fe",
+      "name": "Porsche 911",
+      "price": 100000,
+      "description": "Iconic sports car",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f6", "671e26f953884bce720730f1"]
+    },
+    {
+      "_id": "671e26f953884bce720730ff",
+      "name": "Chevrolet Corvette",
+      "price": 65000,
+      "description": "American sports legend",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f6", "671e26f953884bce720730f1"]
+    },
+    {
+      "_id": "671e26f953884bce72073100",
+      "name": "Mercedes-Benz Sprinter",
+      "price": 45000,
+      "description": "Versatile commercial van",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f7", "671e26f953884bce720730f3"]
+    },
+    {
+      "_id": "671e26f953884bce72073101",
+      "name": "Ford Transit",
+      "price": 40000,
+      "description": "Popular commercial van",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f7", "671e26f953884bce720730f3"]
+    },
+    {
+      "_id": "671e26f953884bce72073102",
+      "name": "Ford F-150",
+      "price": 50000,
+      "description": "Best-selling pickup truck",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f9", "671e26f953884bce720730f3"]
+    },
+    {
+      "_id": "671e26f953884bce72073103",
+      "name": "Chevrolet Silverado",
+      "price": 48000,
+      "description": "Powerful and reliable pickup truck",
+      "image": "https://dummyimage.com/300x200/000/fff&text=Car+Image",
+      "color": "red",
+      "categories": ["671e26f953884bce720730f9", "671e26f953884bce720730f3"]
+    }
+  ]
+}

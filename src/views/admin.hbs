@@ -1,0 +1,46 @@
+<link rel='stylesheet' href='/css/styles-admin.css' />
+
+<h1>List of Cars</h1>
+
+{{#if message}}
+  <p>{{message}}</p>
+{{/if}}
+
+{{#each cars}}
+  <div>
+    <h2>{{name}}</h2>
+    <form action='/admin/{{_id}}' method='POST'>
+      <label>
+        Name:
+        <input type='text' name='name' value='{{name}}' />
+      </label>
+      <br />
+      <label>
+        Description:
+        <textarea name='description'>{{description}}</textarea>
+      </label>
+      <br />
+      <label>
+        Price:
+        <input type='number' name='price' value='{{price}}' />
+      </label>
+      <br />
+      <label>
+        Color:
+        <input type='text' name='color' value='{{color}}' />
+      </label>
+      <br />
+      <label>
+        Categories:
+        <select name="categories" multiple>
+          {{#each ../categories}}
+            <option value="{{this._id}}" {{#if (isSelectedCategories ../this.categories this._id)}}selected{{/if}}>{{name}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <br />
+      <button type='submit'>Save</button>
+    </form>
+  </div>
+  <hr />
+{{/each}}

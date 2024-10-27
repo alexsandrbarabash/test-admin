@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/styles-home.css">
+
+<h1>{{title}}</h1>
+
+{{#each carsByCategory}}
+  <section class="category">
+    <h2>{{this.name}}</h2>
+    <p>{{this.description}}</p>
+    {{#if this.image}}
+      <img src="{{this.image}}" alt="{{this.name}}">
+    {{/if}}
+    
+    <div class="cars">
+      {{#each this.cars}}
+        <div class="car">
+          <h3>{{this.name}}</h3>
+          <p>Price: ${{this.price}}</p>
+          <p>Color: {{this.color}}</p>
+          {{#if this.image}}
+            <img src="{{this.image}}" alt="{{this.name}}">
+          {{/if}}
+          <p>{{this.description}}</p>
+          <a href="/car/{{this._id}}">View Details</a>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+{{/each}}

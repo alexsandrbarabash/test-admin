@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/css/styles-car.css" />
+
+
+<div class="car-details">
+  <h1>{{name}}</h1>
+  <img src="{{image}}" alt="{{name}}" />
+  <p class="price">Price: ${{price}}</p>
+  <p class="color">Color: {{color}}</p>
+  <p class="description">Description: {{description}}</p>
+  <div class="categories">
+    <p>Categories:
+      {{#each categories}}
+        <a href="/category/{{this._id}}">{{this.name}}</a>
+      {{/each}}
+    </p>
+  </div>
+</div>
